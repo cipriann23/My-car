@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Car</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="splash_ico">Splash Logo</string>
+    <string name="splash_motto">Get in, notify others to get notified, stay safe!</string>
+</resources>
