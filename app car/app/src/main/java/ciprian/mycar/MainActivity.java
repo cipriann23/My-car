@@ -8,6 +8,7 @@ import android.os.Handler;
 import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.view.MotionEvent;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -19,6 +20,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.RelativeLayout;
 
 public class MainActivity extends AppCompatActivity{
@@ -26,16 +29,29 @@ public class MainActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main);
-        //runFadeInAnimation();
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.drawable.logo_white);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
+
+        ListView lv = findViewById(R.id.list_number);
+        lv.setOnTouchListener(new View.OnTouchListener() {
+            // Setting on Touch Listener for handling the touch inside ScrollView
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                // Disallow the touch request for parent scroll on touch of child view
+                v.getParent().requestDisallowInterceptTouchEvent(true);
+                return false;
+            }
+        });
+
+        final String[] items_numbers = new String[]{"SV-13-ANA", "IS-32-ISU", "B-999-WLL"};
+
+        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items_numbers);
+        lv.setAdapter(itemsAdapter);
     }
 
-    private void runFadeInAnimation() {
-        Animation a = AnimationUtils.loadAnimation(this, R.anim.fade_in);
-        a.reset();
-        DrawerLayout ll = findViewById(R.id.drawer_layout);
-        ll.clearAnimation();
-        ll.startAnimation(a);
-    }
+
 }

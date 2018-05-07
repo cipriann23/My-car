@@ -8,6 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
     <style name="AppThemeSplash" parent="Theme.AppCompat.Light">
         <!-- Customize your theme here. -->
         <item name="android:windowBackground">@color/colorPrimary</item>
