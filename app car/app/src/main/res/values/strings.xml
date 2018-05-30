@@ -8,4 +8,14 @@
     <string name="splash_ico">Splash Logo</string>
     <string name="splash_motto">Get in, notify others to get notified, stay safe!</string>
     <string name="menu_edit_add">Add / Edit</string>
+    <string name="Allert_1">Allert_1</string>
+    <string name="Allert_2">Allert_2</string>
+    <string name="Allert_3">Allert_3</string>
+    <string name="Allert_4">Allert_4</string>
+    <string name="Allert_5">Allert_5</string>
+    <string name="Allert_6">Allert_6</string>
+    <string name="Allert_7">Allert_7</string>
+    <string name="Allert_8">Allert_8</string>
+    <string name="title_activity_settings">Settings</string>
+
 </resources>

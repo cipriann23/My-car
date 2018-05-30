@@ -4,12 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+
     <TableLayout
         android:id="@+id/tablelayout"
         android:layout_height="wrap_content"
         android:layout_width="fill_parent"
         android:paddingRight="2dip"
-        android:paddingLeft="2dip" >
+        android:paddingLeft="2dip"
+        android:weightSum="6">
 
         <TableRow>
 
@@ -95,10 +98,11 @@
                     android:layout_marginTop="8dp"
                     android:layout_weight="1"
                     android:background="@color/red"
+                    android:contentDescription="@string/Allert_1"
                     android:elevation="5dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/accident"
-                    android:text="1"
+                    android:text="@string/Allert_1"
                     app:layout_constraintBottom_toTopOf="@+id/button5"
                     app:layout_constraintEnd_toStartOf="@+id/button2"
                     app:layout_constraintHorizontal_chainStyle="packed"
@@ -114,9 +118,11 @@
                     android:layout_marginStart="4dp"
                     android:layout_marginTop="8dp"
                     android:background="@color/orange"
+                    android:contentDescription="@string/Allert_2"
                     android:elevation="5dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/pick_up"
+                    android:text="@string/Allert_2"
                     app:layout_constraintBottom_toTopOf="@+id/button6"
                     app:layout_constraintEnd_toStartOf="@+id/button3"
                     app:layout_constraintStart_toEndOf="@+id/button1"
@@ -132,9 +138,11 @@
                     android:layout_marginStart="4dp"
                     android:layout_marginTop="8dp"
                     android:background="@color/orange"
+                    android:contentDescription="@string/Allert_3"
                     android:elevation="5dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/parking"
+                    android:text="@string/Allert_3"
                     app:layout_constraintBottom_toTopOf="@+id/button7"
                     app:layout_constraintEnd_toStartOf="@+id/button4"
                     app:layout_constraintStart_toEndOf="@+id/button2"
@@ -149,9 +157,11 @@
                     android:layout_marginStart="4dp"
                     android:layout_marginTop="8dp"
                     android:background="@color/orange"
+                    android:contentDescription="@string/Allert_4"
                     android:elevation="5dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/info"
+                    android:text="@string/Allert_4"
                     app:layout_constraintBottom_toTopOf="@+id/button9"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/button3"
@@ -167,9 +177,11 @@
                     android:layout_marginTop="4dp"
                     android:layout_weight="1"
                     android:background="@color/red"
+                    android:contentDescription="@string/Allert_5"
                     android:elevation="5dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/thief"
+                    android:text="@string/Allert_5"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/button6"
                     app:layout_constraintStart_toStartOf="parent"
@@ -184,9 +196,11 @@
                     android:layout_marginStart="4dp"
                     android:layout_marginTop="4dp"
                     android:background="@color/orange"
+                    android:contentDescription="@string/Allert_6"
                     android:elevation="5dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/wheel_block"
+                    android:text="@string/Allert_6"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/button7"
                     app:layout_constraintStart_toEndOf="@+id/button5"
@@ -201,9 +215,11 @@
                     android:layout_marginStart="4dp"
                     android:layout_marginTop="4dp"
                     android:background="@color/orange"
+                    android:contentDescription="@string/Allert_7"
                     android:elevation="5dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/car_light"
+                    android:text="@string/Allert_7"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/button9"
                     app:layout_constraintStart_toEndOf="@+id/button6"
@@ -218,9 +234,11 @@
                     android:layout_marginStart="4dp"
                     android:layout_marginTop="4dp"
                     android:background="@color/green"
+                    android:contentDescription="@string/Allert_8"
                     android:elevation="5dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/chat"
+                    android:text="@string/Allert_8"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/button7"
@@ -240,6 +258,9 @@
                 android:background="#fff"
                 android:elevation="5dp">
 
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
             </android.support.constraint.ConstraintLayout>
         </TableRow>
         <TableRow>

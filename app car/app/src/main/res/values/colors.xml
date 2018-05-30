@@ -7,4 +7,17 @@
     <color name="red">#FF5252</color>
     <color name="orange">#CDDC39</color>
     <color name="green">#009688</color>
+
+    <array name="dot_active">
+        <item>@color/colorPrimary</item>
+        <item>@color/colorPrimary</item>
+        <item>@color/colorPrimary</item>
+        <item>@color/colorPrimary</item>
+    </array>
+    <array name="dot_inactive">
+        <item>@color/colorAccent</item>
+        <item>@color/colorAccent</item>
+        <item>@color/colorAccent</item>
+        <item>@color/colorAccent</item>
+    </array>
 </resources>
