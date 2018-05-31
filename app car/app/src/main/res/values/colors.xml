@@ -4,20 +4,21 @@
     <color name="colorPrimaryDark">#064269</color>
     <color name="colorAccent">#BDBDBD</color>
     <color name="colorWhite">#FFFFFF</color>
+    <color name="colorDark">#0b2e44</color>
     <color name="red">#FF5252</color>
     <color name="orange">#CDDC39</color>
     <color name="green">#009688</color>
 
     <array name="dot_active">
-        <item>@color/colorPrimary</item>
-        <item>@color/colorPrimary</item>
-        <item>@color/colorPrimary</item>
-        <item>@color/colorPrimary</item>
+        <item>@color/colorAccent</item>
+        <item>@color/colorAccent</item>
+        <item>@color/colorAccent</item>
+        <item>@color/colorAccent</item>
     </array>
     <array name="dot_inactive">
-        <item>@color/colorAccent</item>
-        <item>@color/colorAccent</item>
-        <item>@color/colorAccent</item>
-        <item>@color/colorAccent</item>
+        <item>@color/colorDark</item>
+        <item>@color/colorDark</item>
+        <item>@color/colorDark</item>
+        <item>@color/colorDark</item>
     </array>
 </resources>

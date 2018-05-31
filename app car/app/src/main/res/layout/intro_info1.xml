@@ -4,39 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ciprian.mycar.activity_singin"
     android:background="@color/colorPrimaryDark"
     android:visibility="visible">
 
-    <ImageView
-        android:id="@+id/imageView4"
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
-        android:layout_height="167dp"
-        android:layout_marginBottom="175dp"
-        android:layout_marginEnd="61dp"
-        android:layout_marginStart="61dp"
-        android:layout_marginTop="173dp"
-        android:contentDescription="@string/splash_ico"
-        android:scaleType="center"
-        android:scaleX="0.35"
-        android:scaleY="0.35"
-        android:src="@drawable/logo_white"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="294dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="290dp"
+        android:text="3"
+        android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="37dp"
-        android:layout_marginTop="7dp"
-        android:text="@string/splash_motto"
-        android:textColor="@color/colorWhite"
-        android:visibility="invisible"
-        app:layout_constraintEnd_toStartOf="@+id/imageView4"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
 </android.support.constraint.ConstraintLayout>
